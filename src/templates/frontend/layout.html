@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    {% block head %}
+        {% block metas %}
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-language" content="{{ LANGUAGE_CODE }}" />
+        <meta name="robots" content="index,follow" />
+        <meta name="googlebot" content="index,follow,snippet,archive" />
+        <meta name="author" content="Codescale s.r.o." />
+        <meta name="description" content="{% block description %}Collaborative debugging tool{% endblock %}" />
+        <meta name="keywords" content="{% block keywords %}pastebin, openpaste, api{% endblock %}" />
+        {% endblock %}
+
+        {% block styles %}
+        <link rel="stylesheet" href="{{ MEDIA_URL }}css/reset.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="{{ MEDIA_URL }}css/jquery-ui.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="{{ MEDIA_URL }}css/style.css" type="text/css" media="screen" />
+        {% endblock %}
+
+        {% block javascripts %}
+        <script type="text/javascript" src="{{ MEDIA_URL }}js/jquery.js"></script>
+        <script type="text/javascript" src="{{ MEDIA_URL }}js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="{{ MEDIA_URL }}js/jquery_plugins.js"></script>
+        <!--[if lt IE 7]>
+                <script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+                <script type="text/javascript" >
+                DD_belatedPNG.fix('.LeftColumnIn ul li a, #Top p, #Foot');
+                </script>
+        <![endif]-->
+        <script type="text/javascript" src="{{ MEDIA_URL }}js/common.js"></script>
+        {% endblock %}
+        <title>{% block title %}Openpaste - collaborative debugging tool{% endblock %}</title>
+    {% endblock %}
+    </head>
+    <body>
+        <div id="page">
+        {% block page %}
+            <div id="header">
+            {% block header %}
+                <div id="logo">
+                    <a href="{% url new_post %}"><img src="{{ MEDIA_URL }}img/logo.gif" alt="Logo" width="200" height="75" /></a>
+                </div>
+                <div id="menu">
+                    <a href="{% url new_post %}">New post</a>
+                    <span></span>
+                    {% if 'posts' in VISITOR.attributes and VISITOR.attributes.posts|length > 0 %}
+                        <a href="{% url my_posts %}">My posts</a>
+                        <span></span>
+                    {% endif %}
+                    <a href="{% url archive %}">Archive</a>
+                </div>
+                <div id="submenu">
+                    <a href="#">Services</a>
+                    <a href="#">Api</a>
+                    <a href="#">Help</a>
+                </div>
+            {% endblock %}
+            </div>
+            <div id="content">
+                {% block content %}
+                {% endblock %}
+            </div>
+        {% endblock %}
+        </div>
+    </body>
+</html>

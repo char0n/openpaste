@@ -1,0 +1,1189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object pk="1" model="sites.site">
+        <field type="CharField" name="domain">openpaste.org</field>
+        <field type="CharField" name="name">Openpaste.org</field>
+    </object>
+    <object pk="1" model="web.syntax">
+        <field type="CharField" name="name">JavaScript+Mako</field>
+        <field type="CharField" name="aliases">js+mako,javascript+mako</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/x-javascript+mako,text/x-javascript+mako,text/javascript+mako</field>
+    </object>
+    <object pk="2" model="web.syntax">
+        <field type="CharField" name="name">Brainfuck</field>
+        <field type="CharField" name="aliases">brainfuck,bf</field>
+        <field type="CharField" name="filetypes">*.bf,*.b</field>
+        <field type="CharField" name="mimetypes">application/x-brainfuck</field>
+    </object>
+    <object pk="3" model="web.syntax">
+        <field type="CharField" name="name">HTML+Cheetah</field>
+        <field type="CharField" name="aliases">html+cheetah,html+spitfire</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/html+cheetah,text/html+spitfire</field>
+    </object>
+    <object pk="4" model="web.syntax">
+        <field type="CharField" name="name">Bash</field>
+        <field type="CharField" name="aliases">bash,sh,ksh</field>
+        <field type="CharField" name="filetypes">*.sh,*.ksh,*.bash,*.ebuild,*.eclass</field>
+        <field type="CharField" name="mimetypes">application/x-sh,application/x-shellscript</field>
+    </object>
+    <object pk="5" model="web.syntax">
+        <field type="CharField" name="name">CSS+Myghty</field>
+        <field type="CharField" name="aliases">css+myghty</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/css+myghty</field>
+    </object>
+    <object pk="6" model="web.syntax">
+        <field type="CharField" name="name">Coldfusion HTML</field>
+        <field type="CharField" name="aliases">cfm</field>
+        <field type="CharField" name="filetypes">*.cfm,*.cfml,*.cfc</field>
+        <field type="CharField" name="mimetypes">application/x-coldfusion</field>
+    </object>
+    <object pk="7" model="web.syntax">
+        <field type="CharField" name="name">Smarty</field>
+        <field type="CharField" name="aliases">smarty</field>
+        <field type="CharField" name="filetypes">*.tpl</field>
+        <field type="CharField" name="mimetypes">application/x-smarty</field>
+    </object>
+    <object pk="8" model="web.syntax">
+        <field type="CharField" name="name">Protocol Buffer</field>
+        <field type="CharField" name="aliases">protobuf</field>
+        <field type="CharField" name="filetypes">*.proto</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="9" model="web.syntax">
+        <field type="CharField" name="name">ApacheConf</field>
+        <field type="CharField" name="aliases">apacheconf,aconf,apache</field>
+        <field type="CharField" name="filetypes">.htaccess,apache.conf,apache2.conf</field>
+        <field type="CharField" name="mimetypes">text/x-apacheconf</field>
+    </object>
+    <object pk="10" model="web.syntax">
+        <field type="CharField" name="name">Java</field>
+        <field type="CharField" name="aliases">java</field>
+        <field type="CharField" name="filetypes">*.java</field>
+        <field type="CharField" name="mimetypes">text/x-java</field>
+    </object>
+    <object pk="11" model="web.syntax">
+        <field type="CharField" name="name">JavaScript+Genshi Text</field>
+        <field type="CharField" name="aliases">js+genshitext,js+genshi,javascript+genshitext,javascript+genshi</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/x-javascript+genshi,text/x-javascript+genshi,text/javascript+genshi</field>
+    </object>
+    <object pk="12" model="web.syntax">
+        <field type="CharField" name="name">Erlang</field>
+        <field type="CharField" name="aliases">erlang</field>
+        <field type="CharField" name="filetypes">*.erl,*.hrl</field>
+        <field type="CharField" name="mimetypes">text/x-erlang</field>
+    </object>
+    <object pk="13" model="web.syntax">
+        <field type="CharField" name="name">CoffeeScript</field>
+        <field type="CharField" name="aliases">coffee-script,coffeescript</field>
+        <field type="CharField" name="filetypes">*.coffee</field>
+        <field type="CharField" name="mimetypes">text/coffeescript</field>
+    </object>
+    <object pk="14" model="web.syntax">
+        <field type="CharField" name="name">ANTLR With ActionScript Target</field>
+        <field type="CharField" name="aliases">antlr-as,antlr-actionscript</field>
+        <field type="CharField" name="filetypes">*.G,*.g</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="15" model="web.syntax">
+        <field type="CharField" name="name">d-objdump</field>
+        <field type="CharField" name="aliases">d-objdump</field>
+        <field type="CharField" name="filetypes">*.d-objdump</field>
+        <field type="CharField" name="mimetypes">text/x-d-objdump</field>
+    </object>
+    <object pk="16" model="web.syntax">
+        <field type="CharField" name="name">CSS+Ruby</field>
+        <field type="CharField" name="aliases">css+erb,css+ruby</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/css+ruby</field>
+    </object>
+    <object pk="17" model="web.syntax">
+        <field type="CharField" name="name">MySQL</field>
+        <field type="CharField" name="aliases">mysql</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/x-mysql</field>
+    </object>
+    <object pk="18" model="web.syntax">
+        <field type="CharField" name="name">C++</field>
+        <field type="CharField" name="aliases">cpp,c++</field>
+        <field type="CharField" name="filetypes">*.cpp,*.hpp,*.c++,*.h++,*.cc,*.hh,*.cxx,*.hxx</field>
+        <field type="CharField" name="mimetypes">text/x-c++hdr,text/x-c++src</field>
+    </object>
+    <object pk="19" model="web.syntax">
+        <field type="CharField" name="name">XML+Smarty</field>
+        <field type="CharField" name="aliases">xml+smarty</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/xml+smarty</field>
+    </object>
+    <object pk="20" model="web.syntax">
+        <field type="CharField" name="name">autohotkey</field>
+        <field type="CharField" name="aliases">ahk</field>
+        <field type="CharField" name="filetypes">*.ahk,*.ahkl</field>
+        <field type="CharField" name="mimetypes">text/x-autohotkey</field>
+    </object>
+    <object pk="21" model="web.syntax">
+        <field type="CharField" name="name">Felix</field>
+        <field type="CharField" name="aliases">felix,flx</field>
+        <field type="CharField" name="filetypes">*.flx,*.flxh</field>
+        <field type="CharField" name="mimetypes">text/x-felix</field>
+    </object>
+    <object pk="22" model="web.syntax">
+        <field type="CharField" name="name">CMake</field>
+        <field type="CharField" name="aliases">cmake</field>
+        <field type="CharField" name="filetypes">*.cmake,CMakeLists.txt</field>
+        <field type="CharField" name="mimetypes">text/x-cmake</field>
+    </object>
+    <object pk="23" model="web.syntax">
+        <field type="CharField" name="name">Mako</field>
+        <field type="CharField" name="aliases">mako</field>
+        <field type="CharField" name="filetypes">*.mao</field>
+        <field type="CharField" name="mimetypes">application/x-mako</field>
+    </object>
+    <object pk="24" model="web.syntax">
+        <field type="CharField" name="name">Python</field>
+        <field type="CharField" name="aliases">python,py</field>
+        <field type="CharField" name="filetypes">*.py,*.pyw,*.sc,SConstruct,SConscript,*.tac</field>
+        <field type="CharField" name="mimetypes">text/x-python,application/x-python</field>
+    </object>
+    <object pk="25" model="web.syntax">
+        <field type="CharField" name="name">JavaScript+Myghty</field>
+        <field type="CharField" name="aliases">js+myghty,javascript+myghty</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/x-javascript+myghty,text/x-javascript+myghty,text/javascript+mygthy</field>
+    </object>
+    <object pk="26" model="web.syntax">
+        <field type="CharField" name="name">XML+Mako</field>
+        <field type="CharField" name="aliases">xml+mako</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/xml+mako</field>
+    </object>
+    <object pk="27" model="web.syntax">
+        <field type="CharField" name="name">Scaml</field>
+        <field type="CharField" name="aliases">scaml,SCAML</field>
+        <field type="CharField" name="filetypes">*.scaml</field>
+        <field type="CharField" name="mimetypes">text/x-scaml</field>
+    </object>
+    <object pk="28" model="web.syntax">
+        <field type="CharField" name="name">MAQL</field>
+        <field type="CharField" name="aliases">maql</field>
+        <field type="CharField" name="filetypes">*.maql</field>
+        <field type="CharField" name="mimetypes">text/x-gooddata-maql,application/x-gooddata-maql</field>
+    </object>
+    <object pk="29" model="web.syntax">
+        <field type="CharField" name="name">Boo</field>
+        <field type="CharField" name="aliases">boo</field>
+        <field type="CharField" name="filetypes">*.boo</field>
+        <field type="CharField" name="mimetypes">text/x-boo</field>
+    </object>
+    <object pk="30" model="web.syntax">
+        <field type="CharField" name="name">ActionScript</field>
+        <field type="CharField" name="aliases">as,actionscript</field>
+        <field type="CharField" name="filetypes">*.as</field>
+        <field type="CharField" name="mimetypes">application/x-actionscript,text/x-actionscript,text/actionscript</field>
+    </object>
+    <object pk="31" model="web.syntax">
+        <field type="CharField" name="name">VB.net</field>
+        <field type="CharField" name="aliases">vb.net,vbnet</field>
+        <field type="CharField" name="filetypes">*.vb,*.bas</field>
+        <field type="CharField" name="mimetypes">text/x-vbnet,text/x-vba</field>
+    </object>
+    <object pk="32" model="web.syntax">
+        <field type="CharField" name="name">SquidConf</field>
+        <field type="CharField" name="aliases">squidconf,squid.conf,squid</field>
+        <field type="CharField" name="filetypes">squid.conf</field>
+        <field type="CharField" name="mimetypes">text/x-squidconf</field>
+    </object>
+    <object pk="33" model="web.syntax">
+        <field type="CharField" name="name">D</field>
+        <field type="CharField" name="aliases">d</field>
+        <field type="CharField" name="filetypes">*.d,*.di</field>
+        <field type="CharField" name="mimetypes">text/x-dsrc</field>
+    </object>
+    <object pk="34" model="web.syntax">
+        <field type="CharField" name="name">Logtalk</field>
+        <field type="CharField" name="aliases">logtalk</field>
+        <field type="CharField" name="filetypes">*.lgt</field>
+        <field type="CharField" name="mimetypes">text/x-logtalk</field>
+    </object>
+    <object pk="35" model="web.syntax">
+        <field type="CharField" name="name">SCSS</field>
+        <field type="CharField" name="aliases">scss</field>
+        <field type="CharField" name="filetypes">*.scss</field>
+        <field type="CharField" name="mimetypes">text/x-scss</field>
+    </object>
+    <object pk="36" model="web.syntax">
+        <field type="CharField" name="name">BBCode</field>
+        <field type="CharField" name="aliases">bbcode</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/x-bbcode</field>
+    </object>
+    <object pk="37" model="web.syntax">
+        <field type="CharField" name="name">Haml</field>
+        <field type="CharField" name="aliases">haml,HAML</field>
+        <field type="CharField" name="filetypes">*.haml</field>
+        <field type="CharField" name="mimetypes">text/x-haml</field>
+    </object>
+    <object pk="38" model="web.syntax">
+        <field type="CharField" name="name">MuPAD</field>
+        <field type="CharField" name="aliases">mupad</field>
+        <field type="CharField" name="filetypes">*.mu</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="39" model="web.syntax">
+        <field type="CharField" name="name">XML+Ruby</field>
+        <field type="CharField" name="aliases">xml+erb,xml+ruby</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/xml+ruby</field>
+    </object>
+    <object pk="40" model="web.syntax">
+        <field type="CharField" name="name">Debian Control file</field>
+        <field type="CharField" name="aliases">control</field>
+        <field type="CharField" name="filetypes">control</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="41" model="web.syntax">
+        <field type="CharField" name="name">Jade</field>
+        <field type="CharField" name="aliases">jade,JADE</field>
+        <field type="CharField" name="filetypes">*.jade</field>
+        <field type="CharField" name="mimetypes">text/x-jade</field>
+    </object>
+    <object pk="42" model="web.syntax">
+        <field type="CharField" name="name">RHTML</field>
+        <field type="CharField" name="aliases">rhtml,html+erb,html+ruby</field>
+        <field type="CharField" name="filetypes">*.rhtml</field>
+        <field type="CharField" name="mimetypes">text/html+ruby</field>
+    </object>
+    <object pk="43" model="web.syntax">
+        <field type="CharField" name="name">XML+Velocity</field>
+        <field type="CharField" name="aliases">xml+velocity</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/xml+velocity</field>
+    </object>
+    <object pk="44" model="web.syntax">
+        <field type="CharField" name="name">JavaScript+Cheetah</field>
+        <field type="CharField" name="aliases">js+cheetah,javascript+cheetah,js+spitfire,javascript+spitfire</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/x-javascript+cheetah,text/x-javascript+cheetah,text/javascript+cheetah,application/x-javascript+spitfire,text/x-javascript+spitfire,text/javascript+spitfire</field>
+    </object>
+    <object pk="45" model="web.syntax">
+        <field type="CharField" name="name">Python Traceback</field>
+        <field type="CharField" name="aliases">pytb</field>
+        <field type="CharField" name="filetypes">*.pytb</field>
+        <field type="CharField" name="mimetypes">text/x-python-traceback</field>
+    </object>
+    <object pk="46" model="web.syntax">
+        <field type="CharField" name="name">cfstatement</field>
+        <field type="CharField" name="aliases">cfs</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="47" model="web.syntax">
+        <field type="CharField" name="name">Ada</field>
+        <field type="CharField" name="aliases">ada,ada95ada2005</field>
+        <field type="CharField" name="filetypes">*.adb,*.ads,*.ada</field>
+        <field type="CharField" name="mimetypes">text/x-ada</field>
+    </object>
+    <object pk="48" model="web.syntax">
+        <field type="CharField" name="name">objdump</field>
+        <field type="CharField" name="aliases">objdump</field>
+        <field type="CharField" name="filetypes">*.objdump</field>
+        <field type="CharField" name="mimetypes">text/x-objdump</field>
+    </object>
+    <object pk="49" model="web.syntax">
+        <field type="CharField" name="name">CSS+Mako</field>
+        <field type="CharField" name="aliases">css+mako</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/css+mako</field>
+    </object>
+    <object pk="50" model="web.syntax">
+        <field type="CharField" name="name">Gherkin</field>
+        <field type="CharField" name="aliases">Cucumber,cucumber,Gherkin,gherkin</field>
+        <field type="CharField" name="filetypes">*.feature</field>
+        <field type="CharField" name="mimetypes">text/x-gherkin</field>
+    </object>
+    <object pk="51" model="web.syntax">
+        <field type="CharField" name="name">Ragel in Java Host</field>
+        <field type="CharField" name="aliases">ragel-java</field>
+        <field type="CharField" name="filetypes">*.rl</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="52" model="web.syntax">
+        <field type="CharField" name="name">Io</field>
+        <field type="CharField" name="aliases">io</field>
+        <field type="CharField" name="filetypes">*.io</field>
+        <field type="CharField" name="mimetypes">text/x-iosrc</field>
+    </object>
+    <object pk="53" model="web.syntax">
+        <field type="CharField" name="name">Vala</field>
+        <field type="CharField" name="aliases">vala,vapi</field>
+        <field type="CharField" name="filetypes">*.vala,*.vapi</field>
+        <field type="CharField" name="mimetypes">text/x-vala</field>
+    </object>
+    <object pk="54" model="web.syntax">
+        <field type="CharField" name="name">Haskell</field>
+        <field type="CharField" name="aliases">haskell,hs</field>
+        <field type="CharField" name="filetypes">*.hs</field>
+        <field type="CharField" name="mimetypes">text/x-haskell</field>
+    </object>
+    <object pk="55" model="web.syntax">
+        <field type="CharField" name="name">Lua</field>
+        <field type="CharField" name="aliases">lua</field>
+        <field type="CharField" name="filetypes">*.lua,*.wlua</field>
+        <field type="CharField" name="mimetypes">text/x-lua,application/x-lua</field>
+    </object>
+    <object pk="56" model="web.syntax">
+        <field type="CharField" name="name">Sass</field>
+        <field type="CharField" name="aliases">sass,SASS</field>
+        <field type="CharField" name="filetypes">*.sass</field>
+        <field type="CharField" name="mimetypes">text/x-sass</field>
+    </object>
+    <object pk="57" model="web.syntax">
+        <field type="CharField" name="name">ANTLR With ObjectiveC Target</field>
+        <field type="CharField" name="aliases">antlr-objc</field>
+        <field type="CharField" name="filetypes">*.G,*.g</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="58" model="web.syntax">
+        <field type="CharField" name="name">XML</field>
+        <field type="CharField" name="aliases">xml</field>
+        <field type="CharField" name="filetypes">*.xml,*.xsl,*.rss,*.xslt,*.xsd,*.wsdl</field>
+        <field type="CharField" name="mimetypes">text/xml,application/xml,image/svg+xml,application/rss+xml,application/atom+xml,application/xsl+xml,application/xslt+xml</field>
+    </object>
+    <object pk="59" model="web.syntax">
+        <field type="CharField" name="name">Groff</field>
+        <field type="CharField" name="aliases">groff,nroff,man</field>
+        <field type="CharField" name="filetypes">*.[1234567],*.man</field>
+        <field type="CharField" name="mimetypes">application/x-troff,text/troff</field>
+    </object>
+    <object pk="60" model="web.syntax">
+        <field type="CharField" name="name">GLSL</field>
+        <field type="CharField" name="aliases">glsl</field>
+        <field type="CharField" name="filetypes">*.vert,*.frag,*.geo</field>
+        <field type="CharField" name="mimetypes">text/x-glslsrc</field>
+    </object>
+    <object pk="61" model="web.syntax">
+        <field type="CharField" name="name">Genshi Text</field>
+        <field type="CharField" name="aliases">genshitext</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/x-genshi-text,text/x-genshi</field>
+    </object>
+    <object pk="62" model="web.syntax">
+        <field type="CharField" name="name">Objective-J</field>
+        <field type="CharField" name="aliases">objective-j,objectivej,obj-j,objj</field>
+        <field type="CharField" name="filetypes">*.j</field>
+        <field type="CharField" name="mimetypes">text/x-objective-j</field>
+    </object>
+    <object pk="63" model="web.syntax">
+        <field type="CharField" name="name">GAS</field>
+        <field type="CharField" name="aliases">gas</field>
+        <field type="CharField" name="filetypes">*.s,*.S</field>
+        <field type="CharField" name="mimetypes">text/x-gas</field>
+    </object>
+    <object pk="64" model="web.syntax">
+        <field type="CharField" name="name">Python console session</field>
+        <field type="CharField" name="aliases">pycon</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/x-python-doctest</field>
+    </object>
+    <object pk="65" model="web.syntax">
+        <field type="CharField" name="name">MXML</field>
+        <field type="CharField" name="aliases">mxml</field>
+        <field type="CharField" name="filetypes">*.mxml</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="66" model="web.syntax">
+        <field type="CharField" name="name">XML+Cheetah</field>
+        <field type="CharField" name="aliases">xml+cheetah,xml+spitfire</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/xml+cheetah,application/xml+spitfire</field>
+    </object>
+    <object pk="67" model="web.syntax">
+        <field type="CharField" name="name">Go</field>
+        <field type="CharField" name="aliases">go</field>
+        <field type="CharField" name="filetypes">*.go</field>
+        <field type="CharField" name="mimetypes">text/x-gosrc</field>
+    </object>
+    <object pk="68" model="web.syntax">
+        <field type="CharField" name="name">Ragel in C Host</field>
+        <field type="CharField" name="aliases">ragel-c</field>
+        <field type="CharField" name="filetypes">*.rl</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="69" model="web.syntax">
+        <field type="CharField" name="name">aspx-cs</field>
+        <field type="CharField" name="aliases">aspx-cs</field>
+        <field type="CharField" name="filetypes">*.aspx,*.asax,*.ascx,*.ashx,*.asmx,*.axd</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="70" model="web.syntax">
+        <field type="CharField" name="name">Properties</field>
+        <field type="CharField" name="aliases">properties</field>
+        <field type="CharField" name="filetypes">*.properties</field>
+        <field type="CharField" name="mimetypes">text/x-java-properties</field>
+    </object>
+    <object pk="71" model="web.syntax">
+        <field type="CharField" name="name">Ragel in Ruby Host</field>
+        <field type="CharField" name="aliases">ragel-ruby,ragel-rb</field>
+        <field type="CharField" name="filetypes">*.rl</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="72" model="web.syntax">
+        <field type="CharField" name="name">BlitzMax</field>
+        <field type="CharField" name="aliases">blitzmax,bmax</field>
+        <field type="CharField" name="filetypes">*.bmx</field>
+        <field type="CharField" name="mimetypes">text/x-bmx</field>
+    </object>
+    <object pk="73" model="web.syntax">
+        <field type="CharField" name="name">HTML+Genshi</field>
+        <field type="CharField" name="aliases">html+genshi,html+kid</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/html+genshi</field>
+    </object>
+    <object pk="74" model="web.syntax">
+        <field type="CharField" name="name">Perl</field>
+        <field type="CharField" name="aliases">perl,pl</field>
+        <field type="CharField" name="filetypes">*.pl,*.pm</field>
+        <field type="CharField" name="mimetypes">text/x-perl,application/x-perl</field>
+    </object>
+    <object pk="75" model="web.syntax">
+        <field type="CharField" name="name">INI</field>
+        <field type="CharField" name="aliases">ini,cfg</field>
+        <field type="CharField" name="filetypes">*.ini,*.cfg</field>
+        <field type="CharField" name="mimetypes">text/x-ini</field>
+    </object>
+    <object pk="76" model="web.syntax">
+        <field type="CharField" name="name">c-objdump</field>
+        <field type="CharField" name="aliases">c-objdump</field>
+        <field type="CharField" name="filetypes">*.c-objdump</field>
+        <field type="CharField" name="mimetypes">text/x-c-objdump</field>
+    </object>
+    <object pk="77" model="web.syntax">
+        <field type="CharField" name="name">Tcsh</field>
+        <field type="CharField" name="aliases">tcsh,csh</field>
+        <field type="CharField" name="filetypes">*.tcsh,*.csh</field>
+        <field type="CharField" name="mimetypes">application/x-csh</field>
+    </object>
+    <object pk="78" model="web.syntax">
+        <field type="CharField" name="name">RConsole</field>
+        <field type="CharField" name="aliases">rconsole,rout</field>
+        <field type="CharField" name="filetypes">*.Rout</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="79" model="web.syntax">
+        <field type="CharField" name="name">CSS+Smarty</field>
+        <field type="CharField" name="aliases">css+smarty</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/css+smarty</field>
+    </object>
+    <object pk="80" model="web.syntax">
+        <field type="CharField" name="name">Text only</field>
+        <field type="CharField" name="aliases">text</field>
+        <field type="CharField" name="filetypes">*.txt</field>
+        <field type="CharField" name="mimetypes">text/plain</field>
+    </object>
+    <object pk="81" model="web.syntax">
+        <field type="CharField" name="name">ANTLR With C# Target</field>
+        <field type="CharField" name="aliases">antlr-csharp,antlr-c#</field>
+        <field type="CharField" name="filetypes">*.G,*.g</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="82" model="web.syntax">
+        <field type="CharField" name="name">Darcs Patch</field>
+        <field type="CharField" name="aliases">dpatch</field>
+        <field type="CharField" name="filetypes">*.dpatch,*.darcspatch</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="83" model="web.syntax">
+        <field type="CharField" name="name">LLVM</field>
+        <field type="CharField" name="aliases">llvm</field>
+        <field type="CharField" name="filetypes">*.ll</field>
+        <field type="CharField" name="mimetypes">text/x-llvm</field>
+    </object>
+    <object pk="84" model="web.syntax">
+        <field type="CharField" name="name">Nginx configuration file</field>
+        <field type="CharField" name="aliases">nginx</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/x-nginx-conf</field>
+    </object>
+    <object pk="85" model="web.syntax">
+        <field type="CharField" name="name">AppleScript</field>
+        <field type="CharField" name="aliases">applescript</field>
+        <field type="CharField" name="filetypes">*.applescript</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="86" model="web.syntax">
+        <field type="CharField" name="name">HTML+Smarty</field>
+        <field type="CharField" name="aliases">html+smarty</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/html+smarty</field>
+    </object>
+    <object pk="87" model="web.syntax">
+        <field type="CharField" name="name">Literate Haskell</field>
+        <field type="CharField" name="aliases">lhs,literate-haskell</field>
+        <field type="CharField" name="filetypes">*.lhs</field>
+        <field type="CharField" name="mimetypes">text/x-literate-haskell</field>
+    </object>
+    <object pk="88" model="web.syntax">
+        <field type="CharField" name="name">PHP</field>
+        <field type="CharField" name="aliases">php,php3,php4,php5</field>
+        <field type="CharField" name="filetypes">*.php,*.php[345]</field>
+        <field type="CharField" name="mimetypes">text/x-php</field>
+    </object>
+    <object pk="89" model="web.syntax">
+        <field type="CharField" name="name">MiniD</field>
+        <field type="CharField" name="aliases">minid</field>
+        <field type="CharField" name="filetypes">*.md</field>
+        <field type="CharField" name="mimetypes">text/x-minidsrc</field>
+    </object>
+    <object pk="90" model="web.syntax">
+        <field type="CharField" name="name">Ooc</field>
+        <field type="CharField" name="aliases">ooc</field>
+        <field type="CharField" name="filetypes">*.ooc</field>
+        <field type="CharField" name="mimetypes">text/x-ooc</field>
+    </object>
+    <object pk="91" model="web.syntax">
+        <field type="CharField" name="name">SQL</field>
+        <field type="CharField" name="aliases">sql</field>
+        <field type="CharField" name="filetypes">*.sql</field>
+        <field type="CharField" name="mimetypes">text/x-sql</field>
+    </object>
+    <object pk="92" model="web.syntax">
+        <field type="CharField" name="name">NASM</field>
+        <field type="CharField" name="aliases">nasm</field>
+        <field type="CharField" name="filetypes">*.asm,*.ASM</field>
+        <field type="CharField" name="mimetypes">text/x-nasm</field>
+    </object>
+    <object pk="93" model="web.syntax">
+        <field type="CharField" name="name">Debian Sourcelist</field>
+        <field type="CharField" name="aliases">sourceslist,sources.list</field>
+        <field type="CharField" name="filetypes">sources.list</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="94" model="web.syntax">
+        <field type="CharField" name="name">Delphi</field>
+        <field type="CharField" name="aliases">delphi,pas,pascal,objectpascal</field>
+        <field type="CharField" name="filetypes">*.pas</field>
+        <field type="CharField" name="mimetypes">text/x-pascal</field>
+    </object>
+    <object pk="95" model="web.syntax">
+        <field type="CharField" name="name">aspx-vb</field>
+        <field type="CharField" name="aliases">aspx-vb</field>
+        <field type="CharField" name="filetypes">*.aspx,*.asax,*.ascx,*.ashx,*.asmx,*.axd</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="96" model="web.syntax">
+        <field type="CharField" name="name">HTML+Evoque</field>
+        <field type="CharField" name="aliases">html+evoque</field>
+        <field type="CharField" name="filetypes">*.html</field>
+        <field type="CharField" name="mimetypes">text/html+evoque</field>
+    </object>
+    <object pk="97" model="web.syntax">
+        <field type="CharField" name="name">NumPy</field>
+        <field type="CharField" name="aliases">numpy</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="98" model="web.syntax">
+        <field type="CharField" name="name">Modula-2</field>
+        <field type="CharField" name="aliases">modula2,m2</field>
+        <field type="CharField" name="filetypes">*.def,*.mod</field>
+        <field type="CharField" name="mimetypes">text/x-modula2</field>
+    </object>
+    <object pk="99" model="web.syntax">
+        <field type="CharField" name="name">HTML+Django/Jinja</field>
+        <field type="CharField" name="aliases">html+django,html+jinja</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/html+django,text/html+jinja</field>
+    </object>
+    <object pk="100" model="web.syntax">
+        <field type="CharField" name="name">CSS+PHP</field>
+        <field type="CharField" name="aliases">css+php</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/css+php</field>
+    </object>
+    <object pk="101" model="web.syntax">
+        <field type="CharField" name="name">VimL</field>
+        <field type="CharField" name="aliases">vim</field>
+        <field type="CharField" name="filetypes">*.vim,.vimrc</field>
+        <field type="CharField" name="mimetypes">text/x-vim</field>
+    </object>
+    <object pk="102" model="web.syntax">
+        <field type="CharField" name="name">CSS+Genshi Text</field>
+        <field type="CharField" name="aliases">css+genshitext,css+genshi</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/css+genshi</field>
+    </object>
+    <object pk="103" model="web.syntax">
+        <field type="CharField" name="name">Ragel</field>
+        <field type="CharField" name="aliases">ragel</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="104" model="web.syntax">
+        <field type="CharField" name="name">Scalate Server Page</field>
+        <field type="CharField" name="aliases">ssp</field>
+        <field type="CharField" name="filetypes">*.ssp</field>
+        <field type="CharField" name="mimetypes">application/x-ssp</field>
+    </object>
+    <object pk="105" model="web.syntax">
+        <field type="CharField" name="name">XML+Evoque</field>
+        <field type="CharField" name="aliases">xml+evoque</field>
+        <field type="CharField" name="filetypes">*.xml</field>
+        <field type="CharField" name="mimetypes">application/xml+evoque</field>
+    </object>
+    <object pk="106" model="web.syntax">
+        <field type="CharField" name="name">haXe</field>
+        <field type="CharField" name="aliases">hx,haXe</field>
+        <field type="CharField" name="filetypes">*.hx</field>
+        <field type="CharField" name="mimetypes">text/haxe</field>
+    </object>
+    <object pk="107" model="web.syntax">
+        <field type="CharField" name="name">Redcode</field>
+        <field type="CharField" name="aliases">redcode</field>
+        <field type="CharField" name="filetypes">*.cw</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="108" model="web.syntax">
+        <field type="CharField" name="name">Django/Jinja</field>
+        <field type="CharField" name="aliases">django,jinja</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/x-django-templating,application/x-jinja</field>
+    </object>
+    <object pk="109" model="web.syntax">
+        <field type="CharField" name="name">Scala</field>
+        <field type="CharField" name="aliases">scala</field>
+        <field type="CharField" name="filetypes">*.scala</field>
+        <field type="CharField" name="mimetypes">text/x-scala</field>
+    </object>
+    <object pk="110" model="web.syntax">
+        <field type="CharField" name="name">Lighttpd configuration file</field>
+        <field type="CharField" name="aliases">lighty,lighttpd</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/x-lighttpd-conf</field>
+    </object>
+    <object pk="111" model="web.syntax">
+        <field type="CharField" name="name">HTML+Velocity</field>
+        <field type="CharField" name="aliases">html+velocity</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/html+velocity</field>
+    </object>
+    <object pk="112" model="web.syntax">
+        <field type="CharField" name="name">Ragel in D Host</field>
+        <field type="CharField" name="aliases">ragel-d</field>
+        <field type="CharField" name="filetypes">*.rl</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="113" model="web.syntax">
+        <field type="CharField" name="name">Ruby irb session</field>
+        <field type="CharField" name="aliases">rbcon,irb</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/x-ruby-shellsession</field>
+    </object>
+    <object pk="114" model="web.syntax">
+        <field type="CharField" name="name">CSS</field>
+        <field type="CharField" name="aliases">css</field>
+        <field type="CharField" name="filetypes">*.css</field>
+        <field type="CharField" name="mimetypes">text/css</field>
+    </object>
+    <object pk="115" model="web.syntax">
+        <field type="CharField" name="name">JavaScript+Smarty</field>
+        <field type="CharField" name="aliases">js+smarty,javascript+smarty</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/x-javascript+smarty,text/x-javascript+smarty,text/javascript+smarty</field>
+    </object>
+    <object pk="116" model="web.syntax">
+        <field type="CharField" name="name">Asymptote</field>
+        <field type="CharField" name="aliases">asy,asymptote</field>
+        <field type="CharField" name="filetypes">*.asy</field>
+        <field type="CharField" name="mimetypes">text/x-asymptote</field>
+    </object>
+    <object pk="117" model="web.syntax">
+        <field type="CharField" name="name">XML+PHP</field>
+        <field type="CharField" name="aliases">xml+php</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/xml+php</field>
+    </object>
+    <object pk="118" model="web.syntax">
+        <field type="CharField" name="name">Fortran</field>
+        <field type="CharField" name="aliases">fortran</field>
+        <field type="CharField" name="filetypes">*.f,*.f90</field>
+        <field type="CharField" name="mimetypes">text/x-fortran</field>
+    </object>
+    <object pk="119" model="web.syntax">
+        <field type="CharField" name="name">Gnuplot</field>
+        <field type="CharField" name="aliases">gnuplot</field>
+        <field type="CharField" name="filetypes">*.plot,*.plt</field>
+        <field type="CharField" name="mimetypes">text/x-gnuplot</field>
+    </object>
+    <object pk="120" model="web.syntax">
+        <field type="CharField" name="name">REBOL</field>
+        <field type="CharField" name="aliases">rebol</field>
+        <field type="CharField" name="filetypes">*.r,*.r3</field>
+        <field type="CharField" name="mimetypes">text/x-rebol</field>
+    </object>
+    <object pk="121" model="web.syntax">
+        <field type="CharField" name="name">ERB</field>
+        <field type="CharField" name="aliases">erb</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/x-ruby-templating</field>
+    </object>
+    <object pk="122" model="web.syntax">
+        <field type="CharField" name="name">Befunge</field>
+        <field type="CharField" name="aliases">befunge</field>
+        <field type="CharField" name="filetypes">*.befunge</field>
+        <field type="CharField" name="mimetypes">application/x-befunge</field>
+    </object>
+    <object pk="123" model="web.syntax">
+        <field type="CharField" name="name">Dylan</field>
+        <field type="CharField" name="aliases">dylan</field>
+        <field type="CharField" name="filetypes">*.dylan,*.dyl</field>
+        <field type="CharField" name="mimetypes">text/x-dylan</field>
+    </object>
+    <object pk="124" model="web.syntax">
+        <field type="CharField" name="name">MoinMoin/Trac Wiki markup</field>
+        <field type="CharField" name="aliases">trac-wiki,moin</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/x-trac-wiki</field>
+    </object>
+    <object pk="125" model="web.syntax">
+        <field type="CharField" name="name">Matlab</field>
+        <field type="CharField" name="aliases">matlab,octave</field>
+        <field type="CharField" name="filetypes">*.m</field>
+        <field type="CharField" name="mimetypes">text/matlab</field>
+    </object>
+    <object pk="126" model="web.syntax">
+        <field type="CharField" name="name">C</field>
+        <field type="CharField" name="aliases">c</field>
+        <field type="CharField" name="filetypes">*.c,*.h</field>
+        <field type="CharField" name="mimetypes">text/x-chdr,text/x-csrc</field>
+    </object>
+    <object pk="127" model="web.syntax">
+        <field type="CharField" name="name">HTML</field>
+        <field type="CharField" name="aliases">html</field>
+        <field type="CharField" name="filetypes">*.html,*.htm,*.xhtml,*.xslt</field>
+        <field type="CharField" name="mimetypes">text/html,application/xhtml+xml</field>
+    </object>
+    <object pk="128" model="web.syntax">
+        <field type="CharField" name="name">Genshi</field>
+        <field type="CharField" name="aliases">genshi,kid,xml+genshi,xml+kid</field>
+        <field type="CharField" name="filetypes">*.kid</field>
+        <field type="CharField" name="mimetypes">application/x-genshi,application/x-kid</field>
+    </object>
+    <object pk="129" model="web.syntax">
+        <field type="CharField" name="name">reStructuredText</field>
+        <field type="CharField" name="aliases">rst,rest,restructuredtext</field>
+        <field type="CharField" name="filetypes">*.rst,*.rest</field>
+        <field type="CharField" name="mimetypes">text/x-rst,text/prs.fallenstein.rst</field>
+    </object>
+    <object pk="130" model="web.syntax">
+        <field type="CharField" name="name">Velocity</field>
+        <field type="CharField" name="aliases">velocity</field>
+        <field type="CharField" name="filetypes">*.vm,*.fhtml</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="131" model="web.syntax">
+        <field type="CharField" name="name">IRC logs</field>
+        <field type="CharField" name="aliases">irc</field>
+        <field type="CharField" name="filetypes">*.weechatlog</field>
+        <field type="CharField" name="mimetypes">text/x-irclog</field>
+    </object>
+    <object pk="132" model="web.syntax">
+        <field type="CharField" name="name">Prolog</field>
+        <field type="CharField" name="aliases">prolog</field>
+        <field type="CharField" name="filetypes">*.prolog,*.pro,*.pl</field>
+        <field type="CharField" name="mimetypes">text/x-prolog</field>
+    </object>
+    <object pk="133" model="web.syntax">
+        <field type="CharField" name="name">CSS+Django/Jinja</field>
+        <field type="CharField" name="aliases">css+django,css+jinja</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/css+django,text/css+jinja</field>
+    </object>
+    <object pk="134" model="web.syntax">
+        <field type="CharField" name="name">Smalltalk</field>
+        <field type="CharField" name="aliases">smalltalk,squeak</field>
+        <field type="CharField" name="filetypes">*.st</field>
+        <field type="CharField" name="mimetypes">text/x-smalltalk</field>
+    </object>
+    <object pk="135" model="web.syntax">
+        <field type="CharField" name="name">YAML</field>
+        <field type="CharField" name="aliases">yaml</field>
+        <field type="CharField" name="filetypes">*.yaml,*.yml</field>
+        <field type="CharField" name="mimetypes">text/x-yaml</field>
+    </object>
+    <object pk="136" model="web.syntax">
+        <field type="CharField" name="name">HTML+Myghty</field>
+        <field type="CharField" name="aliases">html+myghty</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/html+myghty</field>
+    </object>
+    <object pk="137" model="web.syntax">
+        <field type="CharField" name="name">Makefile</field>
+        <field type="CharField" name="aliases">make,makefile,mf,bsdmake</field>
+        <field type="CharField" name="filetypes">*.mak,Makefile,makefile,Makefile.*,GNUmakefile</field>
+        <field type="CharField" name="mimetypes">text/x-makefile</field>
+    </object>
+    <object pk="138" model="web.syntax">
+        <field type="CharField" name="name">XSLT</field>
+        <field type="CharField" name="aliases">xslt</field>
+        <field type="CharField" name="filetypes">*.xsl,*.xslt</field>
+        <field type="CharField" name="mimetypes">text/xml,application/xml,image/svg+xml,application/rss+xml,application/atom+xml,application/xsl+xml,application/xslt+xml</field>
+    </object>
+    <object pk="139" model="web.syntax">
+        <field type="CharField" name="name">S</field>
+        <field type="CharField" name="aliases">splus,s,r</field>
+        <field type="CharField" name="filetypes">*.S,*.R</field>
+        <field type="CharField" name="mimetypes">text/S-plus,text/S,text/R</field>
+    </object>
+    <object pk="140" model="web.syntax">
+        <field type="CharField" name="name">sqlite3con</field>
+        <field type="CharField" name="aliases">sqlite3</field>
+        <field type="CharField" name="filetypes">*.sqlite3-console</field>
+        <field type="CharField" name="mimetypes">text/x-sqlite3-console</field>
+    </object>
+    <object pk="141" model="web.syntax">
+        <field type="CharField" name="name">OCaml</field>
+        <field type="CharField" name="aliases">ocaml</field>
+        <field type="CharField" name="filetypes">*.ml,*.mli,*.mll,*.mly</field>
+        <field type="CharField" name="mimetypes">text/x-ocaml</field>
+    </object>
+    <object pk="142" model="web.syntax">
+        <field type="CharField" name="name">Gettext Catalog</field>
+        <field type="CharField" name="aliases">pot,po</field>
+        <field type="CharField" name="filetypes">*.pot,*.po</field>
+        <field type="CharField" name="mimetypes">application/x-gettext,text/x-gettext,text/gettext</field>
+    </object>
+    <object pk="143" model="web.syntax">
+        <field type="CharField" name="name">Ruby</field>
+        <field type="CharField" name="aliases">rb,ruby,duby</field>
+        <field type="CharField" name="filetypes">*.rb,*.rbw,Rakefile,*.rake,*.gemspec,*.rbx,*.duby</field>
+        <field type="CharField" name="mimetypes">text/x-ruby,application/x-ruby</field>
+    </object>
+    <object pk="144" model="web.syntax">
+        <field type="CharField" name="name">Python 3.0 Traceback</field>
+        <field type="CharField" name="aliases">py3tb</field>
+        <field type="CharField" name="filetypes">*.py3tb</field>
+        <field type="CharField" name="mimetypes">text/x-python3-traceback</field>
+    </object>
+    <object pk="145" model="web.syntax">
+        <field type="CharField" name="name">POVRay</field>
+        <field type="CharField" name="aliases">pov</field>
+        <field type="CharField" name="filetypes">*.pov,*.inc</field>
+        <field type="CharField" name="mimetypes">text/x-povray</field>
+    </object>
+    <object pk="146" model="web.syntax">
+        <field type="CharField" name="name">Ragel in CPP Host</field>
+        <field type="CharField" name="aliases">ragel-cpp</field>
+        <field type="CharField" name="filetypes">*.rl</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="147" model="web.syntax">
+        <field type="CharField" name="name">Evoque</field>
+        <field type="CharField" name="aliases">evoque</field>
+        <field type="CharField" name="filetypes">*.evoque</field>
+        <field type="CharField" name="mimetypes">application/x-evoque</field>
+    </object>
+    <object pk="148" model="web.syntax">
+        <field type="CharField" name="name">Java Server Page</field>
+        <field type="CharField" name="aliases">jsp</field>
+        <field type="CharField" name="filetypes">*.jsp</field>
+        <field type="CharField" name="mimetypes">application/x-jsp</field>
+    </object>
+    <object pk="149" model="web.syntax">
+        <field type="CharField" name="name">ABAP</field>
+        <field type="CharField" name="aliases">abap</field>
+        <field type="CharField" name="filetypes">*.abap</field>
+        <field type="CharField" name="mimetypes">text/x-abap</field>
+    </object>
+    <object pk="150" model="web.syntax">
+        <field type="CharField" name="name">HTML+Mako</field>
+        <field type="CharField" name="aliases">html+mako</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/html+mako</field>
+    </object>
+    <object pk="151" model="web.syntax">
+        <field type="CharField" name="name">Diff</field>
+        <field type="CharField" name="aliases">diff,udiff</field>
+        <field type="CharField" name="filetypes">*.diff,*.patch</field>
+        <field type="CharField" name="mimetypes">text/x-diff,text/x-patch</field>
+    </object>
+    <object pk="152" model="web.syntax">
+        <field type="CharField" name="name">Matlab session</field>
+        <field type="CharField" name="aliases">matlabsession</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="153" model="web.syntax">
+        <field type="CharField" name="name">Mason</field>
+        <field type="CharField" name="aliases">mason</field>
+        <field type="CharField" name="filetypes">*.m,*.mhtml,*.mc,*.mi,autohandler,dhandler</field>
+        <field type="CharField" name="mimetypes">application/x-mason</field>
+    </object>
+    <object pk="154" model="web.syntax">
+        <field type="CharField" name="name">HTML+PHP</field>
+        <field type="CharField" name="aliases">html+php</field>
+        <field type="CharField" name="filetypes">*.phtml</field>
+        <field type="CharField" name="mimetypes">application/x-php,application/x-httpd-php,application/x-httpd-php3,application/x-httpd-php4,application/x-httpd-php5</field>
+    </object>
+    <object pk="155" model="web.syntax">
+        <field type="CharField" name="name">PostScript</field>
+        <field type="CharField" name="aliases">postscript</field>
+        <field type="CharField" name="filetypes">*.ps,*.eps</field>
+        <field type="CharField" name="mimetypes">application/postscript</field>
+    </object>
+    <object pk="156" model="web.syntax">
+        <field type="CharField" name="name">verilog</field>
+        <field type="CharField" name="aliases">v</field>
+        <field type="CharField" name="filetypes">*.v,*.sv</field>
+        <field type="CharField" name="mimetypes">text/x-verilog</field>
+    </object>
+    <object pk="157" model="web.syntax">
+        <field type="CharField" name="name">ANTLR With Java Target</field>
+        <field type="CharField" name="aliases">antlr-java</field>
+        <field type="CharField" name="filetypes">*.G,*.g</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="158" model="web.syntax">
+        <field type="CharField" name="name">Tcl</field>
+        <field type="CharField" name="aliases">tcl</field>
+        <field type="CharField" name="filetypes">*.tcl</field>
+        <field type="CharField" name="mimetypes">text/x-tcl,text/x-script.tcl,application/x-tcl</field>
+    </object>
+    <object pk="159" model="web.syntax">
+        <field type="CharField" name="name">JavaScript+Ruby</field>
+        <field type="CharField" name="aliases">js+erb,javascript+erb,js+ruby,javascript+ruby</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/x-javascript+ruby,text/x-javascript+ruby,text/javascript+ruby</field>
+    </object>
+    <object pk="160" model="web.syntax">
+        <field type="CharField" name="name">Makefile</field>
+        <field type="CharField" name="aliases">basemake</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="161" model="web.syntax">
+        <field type="CharField" name="name">ANTLR With Python Target</field>
+        <field type="CharField" name="aliases">antlr-python</field>
+        <field type="CharField" name="filetypes">*.G,*.g</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="162" model="web.syntax">
+        <field type="CharField" name="name">cpp-objdump</field>
+        <field type="CharField" name="aliases">cpp-objdump,c++-objdumb,cxx-objdump</field>
+        <field type="CharField" name="filetypes">*.cpp-objdump,*.c++-objdump,*.cxx-objdump</field>
+        <field type="CharField" name="mimetypes">text/x-cpp-objdump</field>
+    </object>
+    <object pk="163" model="web.syntax">
+        <field type="CharField" name="name">Ioke</field>
+        <field type="CharField" name="aliases">ioke,ik</field>
+        <field type="CharField" name="filetypes">*.ik</field>
+        <field type="CharField" name="mimetypes">text/x-iokesrc</field>
+    </object>
+    <object pk="164" model="web.syntax">
+        <field type="CharField" name="name">Python 3</field>
+        <field type="CharField" name="aliases">python3,py3</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">text/x-python3,application/x-python3</field>
+    </object>
+    <object pk="165" model="web.syntax">
+        <field type="CharField" name="name">Batchfile</field>
+        <field type="CharField" name="aliases">bat</field>
+        <field type="CharField" name="filetypes">*.bat,*.cmd</field>
+        <field type="CharField" name="mimetypes">application/x-dos-batch</field>
+    </object>
+    <object pk="166" model="web.syntax">
+        <field type="CharField" name="name">ANTLR</field>
+        <field type="CharField" name="aliases">antlr</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="167" model="web.syntax">
+        <field type="CharField" name="name">JavaScript+Django/Jinja</field>
+        <field type="CharField" name="aliases">js+django,javascript+django,js+jinja,javascript+jinja</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/x-javascript+django,application/x-javascript+jinja,text/x-javascript+django,text/x-javascript+jinja,text/javascript+django,text/javascript+jinja</field>
+    </object>
+    <object pk="168" model="web.syntax">
+        <field type="CharField" name="name">Cython</field>
+        <field type="CharField" name="aliases">cython,pyx</field>
+        <field type="CharField" name="filetypes">*.pyx,*.pxd,*.pxi</field>
+        <field type="CharField" name="mimetypes">text/x-cython,application/x-cython</field>
+    </object>
+    <object pk="169" model="web.syntax">
+        <field type="CharField" name="name">Scheme</field>
+        <field type="CharField" name="aliases">scheme,scm</field>
+        <field type="CharField" name="filetypes">*.scm</field>
+        <field type="CharField" name="mimetypes">text/x-scheme,application/x-scheme</field>
+    </object>
+    <object pk="170" model="web.syntax">
+        <field type="CharField" name="name">Erlang erl session</field>
+        <field type="CharField" name="aliases">erl</field>
+        <field type="CharField" name="filetypes">*.erl-sh</field>
+        <field type="CharField" name="mimetypes">text/x-erl-shellsession</field>
+    </object>
+    <object pk="171" model="web.syntax">
+        <field type="CharField" name="name">Clojure</field>
+        <field type="CharField" name="aliases">clojure,clj</field>
+        <field type="CharField" name="filetypes">*.clj</field>
+        <field type="CharField" name="mimetypes">text/x-clojure,application/x-clojure</field>
+    </object>
+    <object pk="172" model="web.syntax">
+        <field type="CharField" name="name">Modelica</field>
+        <field type="CharField" name="aliases">modelica</field>
+        <field type="CharField" name="filetypes">*.mo</field>
+        <field type="CharField" name="mimetypes">text/x-modelica</field>
+    </object>
+    <object pk="173" model="web.syntax">
+        <field type="CharField" name="name">ANTLR With Perl Target</field>
+        <field type="CharField" name="aliases">antlr-perl</field>
+        <field type="CharField" name="filetypes">*.G,*.g</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="174" model="web.syntax">
+        <field type="CharField" name="name">Myghty</field>
+        <field type="CharField" name="aliases">myghty</field>
+        <field type="CharField" name="filetypes">*.myt,autodelegate</field>
+        <field type="CharField" name="mimetypes">application/x-myghty</field>
+    </object>
+    <object pk="175" model="web.syntax">
+        <field type="CharField" name="name">Duel</field>
+        <field type="CharField" name="aliases">duel,Duel Engine,Duel View,JBST,jbst,JsonML+BST</field>
+        <field type="CharField" name="filetypes">*.duel,*.jbst</field>
+        <field type="CharField" name="mimetypes">text/x-duel,text/x-jbst</field>
+    </object>
+    <object pk="176" model="web.syntax">
+        <field type="CharField" name="name">MOOCode</field>
+        <field type="CharField" name="aliases">moocode</field>
+        <field type="CharField" name="filetypes">*.moo</field>
+        <field type="CharField" name="mimetypes">text/x-moocode</field>
+    </object>
+    <object pk="177" model="web.syntax">
+        <field type="CharField" name="name">Newspeak</field>
+        <field type="CharField" name="aliases">newspeak</field>
+        <field type="CharField" name="filetypes">*.ns2</field>
+        <field type="CharField" name="mimetypes">text/x-newspeak</field>
+    </object>
+    <object pk="178" model="web.syntax">
+        <field type="CharField" name="name">Bash Session</field>
+        <field type="CharField" name="aliases">console</field>
+        <field type="CharField" name="filetypes">*.sh-session</field>
+        <field type="CharField" name="mimetypes">application/x-shell-session</field>
+    </object>
+    <object pk="179" model="web.syntax">
+        <field type="CharField" name="name">Raw token data</field>
+        <field type="CharField" name="aliases">raw</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/x-pygments-tokens</field>
+    </object>
+    <object pk="180" model="web.syntax">
+        <field type="CharField" name="name">C#</field>
+        <field type="CharField" name="aliases">csharp,c#</field>
+        <field type="CharField" name="filetypes">*.cs</field>
+        <field type="CharField" name="mimetypes">text/x-csharp</field>
+    </object>
+    <object pk="181" model="web.syntax">
+        <field type="CharField" name="name">TeX</field>
+        <field type="CharField" name="aliases">tex,latex</field>
+        <field type="CharField" name="filetypes">*.tex,*.aux,*.toc</field>
+        <field type="CharField" name="mimetypes">text/x-tex,text/x-latex</field>
+    </object>
+    <object pk="182" model="web.syntax">
+        <field type="CharField" name="name">Cheetah</field>
+        <field type="CharField" name="aliases">cheetah,spitfire</field>
+        <field type="CharField" name="filetypes">*.tmpl,*.spt</field>
+        <field type="CharField" name="mimetypes">application/x-cheetah,application/x-spitfire</field>
+    </object>
+    <object pk="183" model="web.syntax">
+        <field type="CharField" name="name">GoodData-CL</field>
+        <field type="CharField" name="aliases">gooddata-cl</field>
+        <field type="CharField" name="filetypes">*.gdc</field>
+        <field type="CharField" name="mimetypes">text/x-gooddata-cl</field>
+    </object>
+    <object pk="184" model="web.syntax">
+        <field type="CharField" name="name">Objective-C</field>
+        <field type="CharField" name="aliases">objective-c,objectivec,obj-c,objc</field>
+        <field type="CharField" name="filetypes">*.m</field>
+        <field type="CharField" name="mimetypes">text/x-objective-c</field>
+    </object>
+    <object pk="185" model="web.syntax">
+        <field type="CharField" name="name">JavaScript</field>
+        <field type="CharField" name="aliases">js,javascript</field>
+        <field type="CharField" name="filetypes">*.js</field>
+        <field type="CharField" name="mimetypes">application/javascript,application/x-javascript,text/x-javascript,text/javascript</field>
+    </object>
+    <object pk="186" model="web.syntax">
+        <field type="CharField" name="name">Common Lisp</field>
+        <field type="CharField" name="aliases">common-lisp,cl</field>
+        <field type="CharField" name="filetypes">*.cl,*.lisp,*.el</field>
+        <field type="CharField" name="mimetypes">text/x-common-lisp</field>
+    </object>
+    <object pk="187" model="web.syntax">
+        <field type="CharField" name="name">Embedded Ragel</field>
+        <field type="CharField" name="aliases">ragel-em</field>
+        <field type="CharField" name="filetypes">*.rl</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="188" model="web.syntax">
+        <field type="CharField" name="name">ActionScript 3</field>
+        <field type="CharField" name="aliases">as3,actionscript3</field>
+        <field type="CharField" name="filetypes">*.as</field>
+        <field type="CharField" name="mimetypes">application/x-actionscript,text/x-actionscript,text/actionscript</field>
+    </object>
+    <object pk="189" model="web.syntax">
+        <field type="CharField" name="name">ANTLR With CPP Target</field>
+        <field type="CharField" name="aliases">antlr-cpp</field>
+        <field type="CharField" name="filetypes">*.G,*.g</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="190" model="web.syntax">
+        <field type="CharField" name="name">Hybris</field>
+        <field type="CharField" name="aliases">hybris,hy</field>
+        <field type="CharField" name="filetypes">*.hy,*.hyb</field>
+        <field type="CharField" name="mimetypes">text/x-hybris,application/x-hybris</field>
+    </object>
+    <object pk="191" model="web.syntax">
+        <field type="CharField" name="name">JavaScript+PHP</field>
+        <field type="CharField" name="aliases">js+php,javascript+php</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/x-javascript+php,text/x-javascript+php,text/javascript+php</field>
+    </object>
+    <object pk="192" model="web.syntax">
+        <field type="CharField" name="name">Factor</field>
+        <field type="CharField" name="aliases">factor</field>
+        <field type="CharField" name="filetypes">*.factor</field>
+        <field type="CharField" name="mimetypes">text/x-factor</field>
+    </object>
+    <object pk="193" model="web.syntax">
+        <field type="CharField" name="name">XQuery</field>
+        <field type="CharField" name="aliases">xquery,xqy</field>
+        <field type="CharField" name="filetypes">*.xqy,*.xquery</field>
+        <field type="CharField" name="mimetypes">text/xquery,application/xquery</field>
+    </object>
+    <object pk="194" model="web.syntax">
+        <field type="CharField" name="name">Ragel in Objective C Host</field>
+        <field type="CharField" name="aliases">ragel-objc</field>
+        <field type="CharField" name="filetypes">*.rl</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="195" model="web.syntax">
+        <field type="CharField" name="name">XML+Django/Jinja</field>
+        <field type="CharField" name="aliases">xml+django,xml+jinja</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/xml+django,application/xml+jinja</field>
+    </object>
+    <object pk="196" model="web.syntax">
+        <field type="CharField" name="name">ANTLR With Ruby Target</field>
+        <field type="CharField" name="aliases">antlr-ruby,antlr-rb</field>
+        <field type="CharField" name="filetypes">*.G,*.g</field>
+        <field type="CharField" name="mimetypes"></field>
+    </object>
+    <object pk="197" model="web.syntax">
+        <field type="CharField" name="name">XML+Myghty</field>
+        <field type="CharField" name="aliases">xml+myghty</field>
+        <field type="CharField" name="filetypes"></field>
+        <field type="CharField" name="mimetypes">application/xml+myghty</field>
+    </object>
+</django-objects>

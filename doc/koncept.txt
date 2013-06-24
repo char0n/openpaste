@@ -1,0 +1,46 @@
+Openpaste 2.0
+
+Cielom projektu je zabzpecit najlepsiu pastebin technologiu na trhu ktora by pokryla poziadavky vsetkych
+ludi pouzivajucich roztriestene sluzby mnozstva pastebinom ktore su dnes k dizpozicii.
+
+Projekt by sa rozcelenil to troch fazi
+
+Faza jedna:
+  Dokonale zvladnutie celej pastebin technologie ktora sa venuje zasadne iba textovym
+  operaciam a moznosti prace s textom online, exporty a dalsie veci ktore pridu casom, verzia 2.0
+
+Faza dva:
+  Faza dva bude zabezpecovat sluzby ktore ponuka pastehtml.com
+
+Faza tri:
+  Predpokladana funkcnost faze tri bude ukoncena kompletnou implementaciou
+  pastebinu podporujuceho upload a pracu s obrazkami roznych formatov
+
+
+Faza jedna
+----------
+
+
+	
+
+
+Editor na zadavanie kodu:
+http://www.cdolivet.com/editarea/editarea/exemples/exemple_full.html
+
+Implementacia kratkych url:
+http://en.wikipedia.org/wiki/Hexavigesimal
+
+Subdomains in django
+http://thingsilearned.com/2009/01/05/using-subdomains-in-django/
+
+Diffovanie postov
+http://www.doughellmann.com/PyMOTW/difflib/
+
+Vztahy medzi postami
+http://django-mptt.github.com/django-mptt/install.html
+
+Aplikovanie patchov na posty
+http://code.google.com/p/python-patch/
+
+Determine binary/text file
+http://code.activestate.com/recipes/173220-test-if-a-file-or-string-is-text-or-binary/

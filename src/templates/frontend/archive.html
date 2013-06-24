@@ -1,0 +1,50 @@
+{% extends "frontend/layout.html" %}
+{% load common %}
+
+{% block title %}Archive - {{ block.super }}{% endblock %}
+{% block description %}Archive - {{ block.super }}{% endblock %}
+
+{% block content %}
+    <table id="archive">
+        <thead>
+            <tr>
+                <th>name / title</th>
+                <th>posted</th>
+                <th>expires</th>
+                <th>size</th>
+                <th>lines</th>
+                <th>syntax</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for post in posts %}
+            <tr>
+                <td>
+                    {% if post.author %}
+                        <a href="{% url show_post token=post.token %}">{{ post.author }}</a>
+                    {% else %}
+                        <a href="{% url show_post token=post.token %}">{{ post.token }}</a>
+                    {% endif %}
+                </td>
+                <td>{% get_age post.inserted %} ago</td>
+                <td>
+                    {% if post.expires %}
+                        in {% get_future post.expires %}
+                    {% else %}
+                        Never
+                    {% endif %}
+                </td>
+                <td>{{ post.metadata.size }}</td>
+                <td>{{ post.metadata.lines }}</td>
+                <td>
+                    <a href="{% url archive syntax=post.syntax.aliases %}">{{ post.syntax.name }}</a>
+                </td>
+            </tr>
+        {% empty %}
+            <tr>
+                <td colspan="6">No posts found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

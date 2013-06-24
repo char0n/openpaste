@@ -1,0 +1,110 @@
+{% extends "frontend/layout.html" %}
+
+{% block styles %}
+{% if finput_styles %}
+    <style type="text/css">
+        {{ finput_styles|safe }}
+    </style>
+{% endif %}
+    {{ block.super }}
+{% endblock %}
+
+{% block content %}
+<div class="formated_input">
+    {% if finput %}
+        <div class="finput_header">
+            {{ finput_info.chars }} characters | {{ finput_info.lines }} lines | {{ finput_info.size }}
+        </div>
+        <div class="finput_body">
+            {{ finput|safe }}
+        </div>
+    {% endif %}
+</div>
+&nbsp;
+<div id="new_post">
+    <h1>Make new post</h1>
+    <form action="{% url new_post %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div id="type_tabs">
+            &nbsp;
+            <ul>
+                <!--<li class="type_download"><a href="#type_download">Download URL</a></li>-->
+                <li class="type_upload"><a href="#type_upload">Upload file</a></li>
+                <li class="type_paste"><a href="#type_paste">Paste a post</a></li>
+            </ul>
+            <div class="delim ui-corner-tl">&nbsp;</div>
+            <div id="type_paste">
+                <div id="textarea_wrapper">
+                    <textarea rows="1" cols="1" name="input">{{ data.input }}</textarea>
+                    <p>To highlight a particular line, put <strong>@h@</strong> at the beginning of the line</p>
+                </div>
+            </div>
+            <div id="type_upload">
+                <input type="file" name="file" />
+            </div>
+            <!--
+            <div id="type_download">
+                <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+            </div>
+            -->
+        </div>
+
+        <div id="post_options">
+            &nbsp;
+            <ul>
+                <li class="post_options_basic"><a href="#post_options_basic">Options</a></li>
+            </ul>
+            <div id="post_options_basic">
+                <div class="option_fragment">
+                    <label for="post_syntax">Syntax highlighting:</label>
+                    {% spaceless %}
+                    <select id="post_syntax" name="syntax">
+                        <option value="">Autodetect</option>
+                        {% for syntax in syntaxes %}
+                            <option value="{{ syntax.aliases }}"{% if data.syntax == syntax.aliases %} selected="selected"{% endif %}{% if not data and visitor.attributes.options.syntax == syntax.aliases %} selected="selected"{% endif %}>{{ syntax.name }}</option>
+                        {% endfor %}
+                    </select>
+                    {% endspaceless %}
+                    <br />
+                    <label for="post_expiration">Post expiration:</label>
+                    <select id="post_expiration" name="expiration">
+                        <option value="0"{% if data.expiration == '0' or visitor.attributes.options.expiration ==  '0' %} selected="selected"{% endif %}>Never</option>
+                        <option value="600"{% if data.expiration == '600' or visitor.attributes.options.expiration == '600' %} selected="selected"{% endif %}>10 Minutes</option>
+                        <option value="3600"{% if data.expiration == '3600' or visitor.attributes.options.expiration == '3600' %} selected="selected"{% endif %}>1 Hour</option>
+                        <option value="86400"{% if data.expiration == '86400' or visitor.attributes.options.expiration == '86400' %} selected="selected"{% endif %}>1 Day</option>
+                        <option value="2592000"{% if data.expiration == '2592000' or visitor.attributes.options.expiration == '2592000' %} selected="selected"{% endif %}>1 Month</option>
+                    </select>
+                    <br />
+                    <label for="post_exposure">Post exposure:</label>
+                    <select id="post_exposure" name="exposure">
+                        <option value="1"{% if data.exposure == '1' or visitor.attributes.options.exposure == '1' %} selected="selected"{% endif %}>Public</option>
+                        <option value="2"{% if data.exposure == '2' or visitor.attributes.options.exposure == '2' %} selected="selected"{% endif %}>Private</option>
+                    </select>
+                </div>
+                <div class="option_fragment">
+                    <label for="post_wrapping">Post wrapping:</label>
+                    <select id="post_wrapping" name="wrapping">
+                        <option value="0"{% if data.wrapping == '0' or visitor.attributes.options.wrapping == '0' %} selected="selected"{% endif %}>Nowrap</option>
+                        <!--<option value="1"{% if data.wrapping == '1' or visitor.attributes.options.wrapping == '1' %} selected="selected"{% endif %}>Wrap</option>-->
+                    </select>
+                    <label for="post_name">Name / Title:</label>
+                    <input type="text" id="post_name" name="name" value="{% if data %}{{ data.name }}{% endif %}{% if not data and visitor %}{{ visitor.attributes.options.name }}{% endif %}" />
+                    <br />
+                    <label for="post_email">Email:</label>
+                    <input type="text" id="post_email" name="email" value="{% if data %}{{ data.email }}{% endif %}{% if not data and visitor %}{{ visitor.attributes.options.email }}{% endif %}" />
+                </div>
+                <div class="option_fragment">
+                    <label for="post_description">Description:</label>
+                    <textarea rows="1" cols="1" style="width: 200px;height:50px" id="post_description" name="description">{{ data.description }}</textarea>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="submiters">
+            <input type="submit" name="submiter" value="Paste" />
+            <input type="submit" name="submiter" value="Preview" />
+        </div>
+    </form>
+</div>
+{% endblock %}
